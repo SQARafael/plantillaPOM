@@ -24,6 +24,7 @@ public class BusquedaStepDefinitions {
     @Cuando("ingrese el articulo a buscar y le de clic al articulo")
     public void buscarArticulo() {
         paginaInicioSteps.escribirArticulo();
+        paginaInicioSteps.seleccionarProducto();
 
     }
     @Entonces("puede visualizar el nombre del articulo en pantalla")

@@ -10,6 +10,8 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 
+import java.util.List;
+
 /**
  * @autor Rafael Chica
  * @Fecha: --o--
@@ -21,6 +23,9 @@ public class PaginaInicioPageObject extends PageObject {
 
     @FindBy(how = How.ID, using = "downshift-0-input")
     public WebElementFacade inputBusqueda;
+
+    @FindBy(how = How.XPATH,using = "//span[@class='vtex-product-summary-2-x-productBrand vtex-product-summary-2-x-productBrand--kit-look-card-name vtex-product-summary-2-x-brandName vtex-product-summary-2-x-brandName--kit-look-card-name t-body']")
+    public List<WebElementFacade> spanArticulos;
 
 
 }
